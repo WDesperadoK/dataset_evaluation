@@ -1,0 +1,6 @@
+nltk
+scikit-learn
+textstat
+spacy
+numpy
+datasets
