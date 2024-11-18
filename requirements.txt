@@ -1,3 +1,6 @@
+scikit-learn
+textstat
+spacy
 datasets
 transformers
 torch
