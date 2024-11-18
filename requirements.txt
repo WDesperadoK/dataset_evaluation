@@ -1,6 +1,9 @@
-nltk
 scikit-learn
 textstat
 spacy
-numpy
 datasets
+transformers
+torch
+nltk
+numpy
+zss

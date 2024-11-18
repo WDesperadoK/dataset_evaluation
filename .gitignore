@@ -1,0 +1,17 @@
+# Ignore all files in the env directory
+env/
+
+# Ignore specific file types
+*.pyc
+*.dylib
+*.so
+
+# Ignore specific files
+.DS_Store
+config.json
+
+# Ignore all log files
+*.log
+
+# Ignore database files
+*.db
