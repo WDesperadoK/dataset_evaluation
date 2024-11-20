@@ -1,153 +1,132 @@
 from datasets import load_dataset
-from transformers import AutoTokenizer, AutoModel
-import torch
-import nltk
-nltk.download('punkt_tab')
-nltk.download('averaged_perceptron_tagger_eng')
-nltk.download('maxent_ne_chunker_tab')
-nltk.download('words')
 from collections import Counter
-import numpy as np
-import zss
+import math
+import re
+from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('punkt')
 
+# Load dataset
 ds = load_dataset("Jaehun/DIMPLE")
-# Take a subset of the dataset for evaluation
-ds = ds['train'][:100] 
-# print(train_subset)
+subset = ds['train']
+# [:1000000]
+paraphrases = subset['paraphrase']
+original_paraphrase = paraphrases
 
-# Cosine Similarity
+### Preprocessing Function ###
+def preprocess_text(text):
+    """
+    Preprocess text: remove punctuation while keeping all words.
+    :param text: Original text.
+    :return: Cleaned text as a string.
+    """
+    # Remove punctuation using regex but keep all words
+    text = re.sub(r'[^\w\s]', '', text)  # Removes punctuation while retaining alphanumeric characters and spaces
+    return text
 
-# Load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
-model = AutoModel.from_pretrained('sentence-transformers/bert-base-nli-mean-tokens')
+# Preprocess all paraphrases
+paraphrases = [preprocess_text(text) for text in paraphrases]
 
-def get_embedding(text):
-    inputs = tokenizer(text, return_tensors='pt', padding=True, truncation=True, max_length=128)
-    outputs = model(**inputs)
-    return outputs.last_hidden_state.mean(1)
+### H2 and H3 Entropy Functions ###
+def calculate_ngram_entropy(paraphrases, n):
+    """
+    Calculate n-gram entropy (H_n) for a given list of paraphrases.
+    :param paraphrases: List of strings (paraphrase column).
+    :param n: Size of n-grams (e.g., 2 for bigrams, 3 for trigrams).
+    :return: n-gram entropy (H_n).
+    """
+    ngram_counts = Counter()
+    total_ngrams = 0
 
-def cosine_similarity(embed1, embed2):
-    return (embed1 @ embed2.T) / (embed1.norm() * embed2.norm())
+    # Count n-grams in all paraphrases
+    for text in paraphrases:
+        tokens = text.split()
+        ngrams = [tuple(tokens[i:i+n]) for i in range(len(tokens) - n + 1)]
+        ngram_counts.update(ngrams)
+        total_ngrams += len(ngrams)
 
-# Lexical Diversity
+    # Calculate entropy
+    entropy = 0
+    for ngram, count in ngram_counts.items():
+        prob = count / total_ngrams
+        entropy -= prob * math.log2(prob)
 
-def ngram_entropy(text, n):
-    words = nltk.word_tokenize(text)
-    grams = nltk.ngrams(words, n)
-    frequency = Counter(grams)
-    probabilities = [f / sum(frequency.values()) for f in frequency.values()]
-    return -sum(p * np.log2(p) for p in probabilities if p > 0)
+    return entropy
 
-def msttr(text, segment_length=100):
-    words = nltk.word_tokenize(text)
-    if len(words) < segment_length:
-        return float('nan')  # Not enough tokens to evaluate MSTTR
-    segment_types = [len(set(words[i:i + segment_length])) for i in range(0, len(words), segment_length)]
-    return np.mean(segment_types) / segment_length
+### MSTTR Calculation with Fixed-Length Segments ###
+def calculate_msttr_fixed_segments(paraphrases, segment_length=100):
+    """
+    Calculate MSTTR for combined text with fixed-length segments.
+    :param paraphrases: List of strings (paraphrase column).
+    :param segment_length: Number of tokens per segment.
+    :return: MSTTR value for the dataset.
+    """
+    # Combine all paraphrases into one large text
+    combined_text = " ".join(paraphrases)
+    #print(combined_text)
+    tokens = word_tokenize(combined_text)
+    print(f"Total tokens: {len(tokens)}")
+    print(f"Total segments: {len(tokens) // 100}")
+    print(tokens[:100]) 
 
-def jaccard_similarity(text1, text2):
-    tokens1 = set(nltk.word_tokenize(text1))
-    tokens2 = set(nltk.word_tokenize(text2))
-    return len(tokens1 & tokens2) / len(tokens1 | tokens2)
+    # Extract segments of fixed length
+    ttr_values = []
+    for i in range(0, len(tokens), segment_length):
+        segment = tokens[i:i+segment_length]
+        if len(segment) > 0:
+            ttr = len(set(segment)) / len(segment)
+            ttr_values.append(ttr)
 
-# Syntactic Diversity
-
-def parse_to_tree(sentence):
-    words = nltk.word_tokenize(sentence)
-    pos_tags = nltk.pos_tag(words)
-    tree = nltk.chunk.ne_chunk(pos_tags)
-    return tree
-
-def simple_distance(A, B):
-    return 1 if A != B else 0
-
-def compute_tree_edit_distance(tree1, tree2):
-    return zss.simple_distance(tree1, tree2, lambda n: n, lambda n: n.label(), simple_distance)
-
-def compute_ted_top_layers(tree1, tree2, depth=3):
-    """Compute tree edit distance only up to a certain depth."""
-    def get_children(node):
-        if node.height() <= depth:
-            return list(node)
-        else:
-            return []
-
-    return zss.simple_distance(tree1, tree2, get_children=get_children, get_label=lambda x: x.label(), label_dist=simple_distance)
+    return sum(ttr_values) / len(ttr_values) if ttr_values else 0
 
 
-results = []
-for i in range(len(ds['text'])):
-    text1 = ds['text'][i]
-    paraphrase = ds['paraphrase'][i]
+def calculate_jaccard_similarity(source, paraphrase):
+    """
+    Calculate the Jaccard similarity at the token level between source and paraphrase texts.
+    :param source: Original source text (string).
+    :param paraphrase: Paraphrase text (string).
+    :return: Jaccard similarity score (float).
+    """
+    # Tokenize the source and paraphrase into words
+    source_tokens = set(word_tokenize(source))
+    paraphrase_tokens = set(word_tokenize(paraphrase))
+    
+    # Calculate intersection and union of token sets
+    intersection = source_tokens.intersection(paraphrase_tokens)
+    union = source_tokens.union(paraphrase_tokens)
+    
+    # Compute Jaccard similarity
+    return len(intersection) / len(union) if len(union) > 0 else 0.0
 
-    # Compute embeddings for semantic similarity
-    embed1 = get_embedding(text1)
-    embed2 = get_embedding(paraphrase)
-    semantic_similarity = cosine_similarity(embed1, embed2).item()
+def calculate_jaccard_for_dataset(sources, paraphrases):
+    """
+    Calculate the average Jaccard similarity between source and paraphrase texts in the dataset.
+    :param sources: List of source texts (strings).
+    :param paraphrases: List of paraphrase texts (strings).
+    :return: Average Jaccard similarity score (float).
+    """
+    jaccard_scores = [
+        calculate_jaccard_similarity(source, paraphrase)
+        for source, paraphrase in zip(sources, paraphrases)
+    ]
+    return sum(jaccard_scores) / len(jaccard_scores) if jaccard_scores else 0.0
 
-    # Lexical diversity
-    h2_entropy = ngram_entropy(text1, 2)
-    h3_entropy = ngram_entropy(text1, 3)
-    msttr_value = msttr(text1)
-    jaccard_sim = jaccard_similarity(text1, paraphrase)
+sources = subset['text']
+avg_jaccard = calculate_jaccard_for_dataset(sources, original_paraphrase)
+print(f"Average Jaccard similarity: {avg_jaccard:.4f}")
 
-    # Syntactic diversity (PROBLEMS! counldn't run)
-    tree1 = parse_to_tree(text1)
-    tree2 = parse_to_tree(paraphrase)
-    ted_f = compute_tree_edit_distance(tree1, tree2)
-    ted_3 = compute_ted_top_layers(tree1, tree2, depth=3)
+### Main Evaluation ###
+# Calculate H2 (2-gram entropy)
+h2 = calculate_ngram_entropy(paraphrases, 2)
+print(f"H2 (2-gram entropy): {h2:.4f}")
 
-    result = {
-        'semantic_similarity': semantic_similarity,
-        'h2_entropy': h2_entropy,
-        'h3_entropy': h3_entropy,
-        'msttr': msttr_value,
-        'jaccard_similarity': jaccard_sim,
-        'ted_3': ted_3,
-        'ted_f': ted_f
-    }
-    results.append(result)
-    print(result)
+# Calculate H3 (3-gram entropy)
+h3 = calculate_ngram_entropy(paraphrases, 3)
+print(f"H3 (3-gram entropy): {h3:.4f}")
 
-# Average results
-sum_semantic_similarity = 0
-sum_h2_entropy = 0
-sum_h3_entropy = 0
-sum_msttr = 0
-sum_jaccard = 0
-sum_ted_3 = 0
-sum_ted_f = 0
+# Calculate MSTTR with 100-word segments
+msttr = calculate_msttr_fixed_segments(original_paraphrase, segment_length=100) * 100  # Convert to percentage
+print(f"MSTTR (100-word segments): {msttr:.2f}")
 
-# Sum up all results
-for result in results:
-    sum_semantic_similarity += result['semantic_similarity']
-    sum_h2_entropy += result['h2_entropy']
-    sum_h3_entropy += result['h3_entropy']
-    sum_msttr += result['msttr']
-    sum_jaccard += result['jaccard_similarity']
-    sum_ted_3 += result['ted_3']
-    sum_ted_f += result['ted_f']
-
-# Compute averages
-average_semantic_similarity = sum_semantic_similarity / len(results)
-average_h2_entropy = sum_h2_entropy / len(results)
-average_h3_entropy = sum_h3_entropy / len(results)
-average_msttr = sum_msttr / len(results)
-average_jaccard = sum_jaccard / len(results)
-average_ted_3 = sum_ted_3 / len(results)
-average_ted_f = sum_ted_f / len(results)
-
-# Store or print averages
-average_results = {
-    'average_semantic_similarity': average_semantic_similarity,
-    'average_h2_entropy': average_h2_entropy,
-    'average_h3_entropy': average_h3_entropy,
-    'average_msttr': average_msttr,
-    'average_jaccard_similarity': average_jaccard,
-    'average_ted_3': average_ted_3,
-    'average_ted_f': average_ted_f
-}
-
-print(average_results)
 
 
