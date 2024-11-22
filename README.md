@@ -18,4 +18,5 @@ sbatch evaluate.sh
 bash setup_simcse.sh
 sbatch sematical_sim.sh
 bash setup_java.sh
+sbatch ted_score.sh
 ```

@@ -1,0 +1,55 @@
+Thu Nov 21 22:33:04 2024       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     On  |   00000000:B4:00.0 Off |                    0 |
+|  0%   21C    P8             21W /  300W |       0MiB /  46068MiB |      0%   E. Process |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/shihuis/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Dataset Loaded
+Creating json from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]Creating json from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 75.35ba/s]
+Preprocessed dataset saved as dimple_train.json
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator pos
+[main] INFO edu.stanford.nlp.tagger.maxent.MaxentTagger - Loading POS tagger from edu/stanford/nlp/models/pos-tagger/english-left3words-distsim.tagger ... done [0.6 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [0.6 sec].
+Processed 100 pairs...
+Running Average TED-3: 1.7500001, TED-F: 33.739998
+Processed 200 pairs...
+Running Average TED-3: 1.75, TED-F: 34.500004
+Processed 300 pairs...
+Running Average TED-3: 1.7366669, TED-F: 34.389984
+Processed 400 pairs...
+Running Average TED-3: 1.7875004, TED-F: 34.33998
+Processed 500 pairs...
+Running Average TED-3: 1.77, TED-F: 34.163975
+Processed 600 pairs...
+Running Average TED-3: 1.7799996, TED-F: 33.833305
+Processed 700 pairs...
+Running Average TED-3: 1.8014283, TED-F: 33.52283
+Processed 800 pairs...
+Running Average TED-3: 1.7700002, TED-F: 33.591225
+Processed 900 pairs...
+Running Average TED-3: 1.7755561, TED-F: 33.736633
+Processed 1000 pairs...
+Running Average TED-3: 1.7490003, TED-F: 33.497974
+Final Average TED-3: 1.7490003
+Final Average TED-F: 33.497974
+Results saved to ted_results.json
