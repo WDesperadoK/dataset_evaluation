@@ -54,7 +54,7 @@ def calculate_ngram_entropy(paraphrases, n):
     return entropy
 
 ### MSTTR Calculation with Fixed-Length Segments ###
-def calculate_msttr_fixed_segments(paraphrases, segment_length=100):
+def calculate_msttr_fixed_segments(paraphrases, segment_length=1000):
     """
     Calculate MSTTR for combined text with fixed-length segments.
     :param paraphrases: List of strings (paraphrase column).
@@ -78,6 +78,8 @@ def calculate_msttr_fixed_segments(paraphrases, segment_length=100):
             ttr_values.append(ttr)
 
     return sum(ttr_values) / len(ttr_values) if ttr_values else 0
+
+
 
 
 def calculate_jaccard_similarity(source, paraphrase):
@@ -111,22 +113,22 @@ def calculate_jaccard_for_dataset(sources, paraphrases):
     ]
     return sum(jaccard_scores) / len(jaccard_scores) if jaccard_scores else 0.0
 
-sources = subset['text']
-avg_jaccard = calculate_jaccard_for_dataset(sources, original_paraphrase)
-print(f"Average Jaccard similarity: {avg_jaccard:.4f}")
+# sources = subset['text']
+# avg_jaccard = calculate_jaccard_for_dataset(sources, original_paraphrase)
+# print(f"Average Jaccard similarity: {avg_jaccard:.4f}")
 
-### Main Evaluation ###
-# Calculate H2 (2-gram entropy)
-h2 = calculate_ngram_entropy(paraphrases, 2)
-print(f"H2 (2-gram entropy): {h2:.4f}")
+# ### Main Evaluation ###
+# # Calculate H2 (2-gram entropy)
+# h2 = calculate_ngram_entropy(paraphrases, 2)
+# print(f"H2 (2-gram entropy): {h2:.4f}")
 
-# Calculate H3 (3-gram entropy)
-h3 = calculate_ngram_entropy(paraphrases, 3)
-print(f"H3 (3-gram entropy): {h3:.4f}")
+# # Calculate H3 (3-gram entropy)
+# h3 = calculate_ngram_entropy(paraphrases, 3)
+# print(f"H3 (3-gram entropy): {h3:.4f}")
 
-# Calculate MSTTR with 100-word segments
-msttr = calculate_msttr_fixed_segments(original_paraphrase, segment_length=100) * 100  # Convert to percentage
-print(f"MSTTR (100-word segments): {msttr:.2f}")
+# Calculate MSTTR with 10-word segments
+msttr = calculate_msttr_fixed_segments(paraphrases, segment_length=1750) * 100 # Convert to percentage
+print(f"MSTTR (1000-word segments): {msttr:.2f}")
 
 
 
