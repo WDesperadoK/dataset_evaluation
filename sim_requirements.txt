@@ -1,0 +1,8 @@
+tqdm
+scikit-learn
+scipy
+transformers
+torch
+numpy
+datasets
+nltk

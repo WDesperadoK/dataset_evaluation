@@ -15,4 +15,7 @@ Evaluation self-generated dataset on the same benchmarks
 ```bash
 bash setup.sh
 sbatch evaluate.sh
+bash setup_simcse.sh
+sbatch sematical_sim.sh
+bash setup_java.sh
 ```

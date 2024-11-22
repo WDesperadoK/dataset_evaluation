@@ -7,3 +7,7 @@ torch
 nltk
 numpy
 zss
+requests
+stanfordcorenlp
+apted
+simcse

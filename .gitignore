@@ -9,9 +9,14 @@ env/
 # Ignore specific files
 .DS_Store
 config.json
-
-# Ignore all log files
-*.log
+dimple_train.json
 
 # Ignore database files
 *.db
+
+# Ignore the linked tools
+stanford-corenlp*
+java
+gradle
+libs
+

@@ -11,7 +11,7 @@
 
 # Load Conda
 source ~/miniconda3/etc/profile.d/conda.sh
-conda activate dataset_evaluation
+conda activate simcse_env
 
 # Optional: display GPU information
 nvidia-smi
