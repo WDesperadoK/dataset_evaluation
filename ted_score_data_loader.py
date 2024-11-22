@@ -8,7 +8,7 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
 # Load the DIMPLE dataset
-ds = load_dataset("Jaehun/DIMPLE", split="train[0:1000]")
+ds = load_dataset("Jaehun/DIMPLE", split="train")
 texts = ds['text']
 paraphrases = ds['paraphrase']
 print("Dataset Loaded")

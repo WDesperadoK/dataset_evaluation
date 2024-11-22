@@ -12,7 +12,7 @@ Evaluation self-generated dataset on the same benchmarks
 
 # Run the following code in your terminal
 
-```bash
+```bash/home/shihuis/dataset_evaluation/apted/src/main/java/node
 bash setup.sh
 sbatch evaluate.sh
 bash setup_simcse.sh

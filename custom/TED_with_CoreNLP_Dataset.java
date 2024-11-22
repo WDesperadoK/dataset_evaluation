@@ -32,7 +32,7 @@ public class TED_with_CoreNLP_Dataset {
         APTED<StringUnitCostModel, StringNodeData> apted = new APTED<>(new StringUnitCostModel());
 
         // Read dataset
-        List<Record> records = readDataset(inputFilePath, 1000);
+        List<Record> records = readDataset(inputFilePath);
         if (records == null) {
             System.err.println("Failed to read the dataset.");
             return;
@@ -47,9 +47,12 @@ public class TED_with_CoreNLP_Dataset {
         int processedCount = 0;
         for (Record record : records) {
             try {
+                // System.out.println("Text: " + record.text);
+                // System.out.println("Paraphrase: " + record.paraphrase);
                 Node<StringNodeData> t1 = parser.fromString(record.text);
                 Node<StringNodeData> t2 = parser.fromString(record.paraphrase);
-
+                // System.out.println("Bracket Parsed Tree for Text: " + t1);
+                // System.out.println("Bracket Parsed Tree for Paraphrase: " + t2);
                 // Compute TED-3 and TED-F
                 record.ted3 = computeTED3(t1, t2, apted);
                 record.tedf = computeTEDF(t1, t2, apted);
@@ -83,6 +86,8 @@ public class TED_with_CoreNLP_Dataset {
         // Consider only the top 3 layers of the trees
         Node<StringNodeData> trimmedT1 = TED_with_CoreNLPParser.trimTree(t1, 3);
         Node<StringNodeData> trimmedT2 = TED_with_CoreNLPParser.trimTree(t2, 3);
+        // System.out.println("Trimmed Tree for Text: " + trimmedT1);
+        // System.out.println("Trimmed Tree for Paraphrase: " + trimmedT2);
         return apted.computeEditDistance(trimmedT1, trimmedT2);
     }
 
@@ -91,15 +96,12 @@ public class TED_with_CoreNLP_Dataset {
         return apted.computeEditDistance(t1, t2);
     }
 
-    private static List<Record> readDataset(String filePath, int limit) {
+    private static List<Record> readDataset(String filePath) {
         List<Record> records = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
-            int count = 0;
-
-            while ((line = br.readLine()) != null && count < limit) {
+            while ((line = br.readLine()) != null) {
                 records.add(new Gson().fromJson(line, Record.class));
-                count++;
             }
         } catch (IOException e) {
             e.printStackTrace();

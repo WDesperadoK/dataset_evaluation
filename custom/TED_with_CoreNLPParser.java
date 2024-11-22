@@ -1,5 +1,8 @@
 package at.unisalzburg.dbresearch.apted.custom;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import edu.stanford.nlp.pipeline.*;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.trees.TreeCoreAnnotations;
@@ -35,7 +38,19 @@ public class TED_with_CoreNLPParser {
     public Node<StringNodeData> fromString(String sentence) {
         // Parse the sentence into a CoreNLP Tree
         Tree rawTree = parse(sentence);
+        // Save the result to a file
+        // String outputFilePath = "parsed_trees.txt"; // Specify your file path
+        // try (FileWriter writer = new FileWriter(outputFilePath, true)) { // Open in append mode
+        //     String output = "Raw Parsed Tree of CoreNLP for sentence: " + rawTree.toString() + "\n";
+            
+        //     // Write to file
+        //     writer.write(output);
 
+        //     // Print to console for immediate feedback
+        //     System.out.println(output);
+        // } catch (IOException e) {
+        //     System.err.println("Error writing to file: " + e.getMessage());
+        // }
         // Convert the CoreNLP Tree into an APTED Node
         return convertTreeToNode(rawTree);
     }
@@ -49,20 +64,26 @@ public class TED_with_CoreNLPParser {
         return node;
     }
 
-    public static Node<StringNodeData> trimTree(Node<StringNodeData> tree, int maxDepth) {
-        if (maxDepth <= 0 || tree == null) {
-            return null; // Return null for invalid depth or null tree
+    public static Node<StringNodeData> trimTree(Node<StringNodeData> root, int layers) {
+        // Base case: if the layers are 0, return the current node (leaf node)
+        if (layers == 0) {
+            return new Node<>(root.getNodeData());  // return a copy of the leaf node
         }
 
-        Node<StringNodeData> trimmed = new Node<>(tree.getNodeData());
-        for (Node<StringNodeData> child : tree.getChildren()) {
-            if (maxDepth > 1) {
-                Node<StringNodeData> trimmedChild = trimTree(child, maxDepth - 1);
-                if (trimmedChild != null) {
-                    trimmed.addChild(trimmedChild);
-                }
+        // Create a new node to preserve the structure, for non-leaf nodes
+        Node<StringNodeData> trimmedNode = new Node<>(root.getNodeData());
+
+        // Recursively trim children, only going down to the next level of depth
+        if (layers > 0) {
+            for (Node<StringNodeData> child : root.getChildren()) {
+                // Only trim down the children, not the leaf nodes
+                Node<StringNodeData> trimmedChild = trimTree(child, layers - 1);
+                trimmedNode.addChild(trimmedChild);
             }
         }
-        return trimmed;
+        // Return the newly trimmed node
+        return trimmedNode;
     }
+
+
 }
