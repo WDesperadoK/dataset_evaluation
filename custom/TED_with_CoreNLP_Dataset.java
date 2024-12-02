@@ -68,7 +68,7 @@ public class TED_with_CoreNLP_Dataset {
             }
 
             processedCount++;
-            if (processedCount % 100 == 0) {
+            if (processedCount % 10000 == 0) {
                 System.out.println("Processed " + processedCount + " pairs...");
                 System.out.println("Running Average TED-3: " + runningTed3 + ", TED-F: " + runningTedf);
             }

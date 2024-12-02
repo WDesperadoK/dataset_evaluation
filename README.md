@@ -4,7 +4,7 @@ This is the repo for dataset evaluation of the Impossible Distillation - LoRA Re
 
 # Replication
 
-Evaluate DIMPLE on multiple benchmarks
+Evaluate DIMPLE on semantic similarity and Tree Edit Distance
 
 # Extension
 

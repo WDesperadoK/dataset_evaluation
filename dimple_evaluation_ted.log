@@ -1,4 +1,4 @@
-Fri Nov 22 00:08:04 2024       
+Fri Nov 22 00:16:08 2024       
 +-----------------------------------------------------------------------------------------+
 | NVIDIA-SMI 550.54.15              Driver Version: 550.54.15      CUDA Version: 12.4     |
 |-----------------------------------------+------------------------+----------------------+
@@ -7,7 +7,7 @@ Fri Nov 22 00:08:04 2024
 |                                         |                        |               MIG M. |
 |=========================================+========================+======================|
 |   0  NVIDIA A40                     On  |   00000000:19:00.0 Off |                    0 |
-|  0%   21C    P8             20W /  300W |       0MiB /  46068MiB |      0%   E. Process |
+|  0%   22C    P8             20W /  300W |       0MiB /  46068MiB |      0%   E. Process |
 |                                         |                        |                  N/A |
 +-----------------------------------------+------------------------+----------------------+
                                                                                          
@@ -22,4 +22,246 @@ Fri Nov 22 00:08:04 2024
 [nltk_data]     /home/shihuis/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
 Dataset Loaded
-Map:   0%|          | 0/4287154 [00:00<?, ? examples/s]Map:   0%|          | 145/4287154 [00:00<2:17:38, 519.08 examples/s]Map:   0%|          | 492/4287154 [00:00<1:03:55, 1117.61 examples/s]Map:   0%|          | 1730/4287154 [00:00<18:22, 3888.43 examples/s] Map:   0%|          | 3062/4287154 [00:00<11:12, 6372.43 examples/s]Map:   0%|          | 4495/4287154 [00:00<08:21, 8547.41 examples/s]Map:   0%|          | 5936/4287154 [00:00<07:00, 10190.44 examples/s]Map:   0%|          | 7158/4287154 [00:01<06:37, 10769.62 examples/s]Map:   0%|          | 8584/4287154 [00:01<06:03, 11782.51 examples/s]Map:   0%|          | 10000/4287154 [00:01<05:47, 12320.87 examples/s]Map:   0%|          | 11429/4287154 [00:01<05:31, 12894.28 examples/s]Map:   0%|          | 12883/4287154 [00:01<05:19, 13377.36 examples/s]Map:   0%|          | 14974/4287154 [00:01<05:14, 13593.37 examples/s]Map:   0%|          | 17000/4287154 [00:01<05:16, 13474.21 examples/s]Map:   0%|          | 19000/4287154 [00:02<08:25, 8441.19 examples/s] Map:   0%|          | 20412/4287154 [00:02<07:34, 9390.22 examples/s]Map:   1%|          | 21832/4287154 [00:02<06:53, 10317.24 examples/s]Map:   1%|          | 23160/4287154 [00:02<06:29, 10955.92 examples/s]Map:   1%|          | 24587/4287154 [00:02<06:03, 11735.61 examples/s]Map:   1%|          | 26000/4287154 [00:02<05:49, 12182.76 examples/s]Map:   1%|          | 27419/4287154 [00:02<05:35, 12708.65 examples/s]Map:   1%|          | 28836/4287154 [00:02<05:24, 13105.75 examples/s]Map:   1%|          | 30939/4287154 [00:02<05:16, 13439.78 examples/s]Map:   1%|          | 33000/4287154 [00:03<05:17, 13404.08 examples/s]Map:   1%|          | 34390/4287154 [00:03<05:14, 13522.39 examples/s]Map:   1%|          | 35825/4287154 [00:03<05:09, 13735.46 examples/s]Map:   1%|          | 37910/4287154 [00:03<05:08, 13788.60 examples/s]Map:   1%|          | 39928/4287154 [00:03<05:10, 13674.33 examples/s]Map:   1%|          | 41641/4287154 [00:04<08:25, 8396.49 examples/s] Map:   1%|          | 43000/4287154 [00:04<07:38, 9253.45 examples/s]Map:   1%|          | 44421/4287154 [00:04<06:55, 10207.99 examples/s]Map:   1%|          | 45838/4287154 [00:04<06:23, 11061.54 examples/s]Map:   1%|          | 47170/4287154 [00:04<06:05, 11591.62 examples/s]Map:   1%|          | 48591/4287154 [00:04<05:45, 12250.19 examples/s]Map:   1%|          | 50000/4287154 [00:04<05:38, 12533.34 examples/s]Map:   1%|          | 51413/4287154 [00:04<05:26, 12962.97 examples/s]Map:   1%|          | 52832/4287154 [00:04<05:18, 13302.31 examples/s]Map:   1%|▏         | 54916/4287154 [00:04<05:13, 13519.90 examples/s]Map:   1%|▏         | 56967/4287154 [00:05<05:11, 13569.46 examples/s]Map:   1%|▏         | 59000/4287154 [00:05<05:15, 13388.82 examples/s]Map:   1%|▏         | 60386/4287154 [00:05<05:13, 13498.44 examples/s]Map:   1%|▏         | 61812/4287154 [00:05<05:08, 13690.36 examples/s]Map:   1%|▏         | 63646/4287154 [00:05<08:01, 8772.83 examples/s] Map:   2%|▏         | 65000/4287154 [00:05<07:20, 9593.31 examples/s]Map:   2%|▏         | 66409/4287154 [00:06<06:41, 10519.09 examples/s]Map:   2%|▏         | 67844/4287154 [00:06<06:10, 11387.59 examples/s]Map:   2%|▏         | 69180/4287154 [00:06<05:55, 11870.00 examples/s]Map:   2%|▏         | 70567/4287154 [00:06<05:40, 12387.86 examples/s]Map:   2%|▏         | 72000/4287154 [00:06<05:32, 12677.96 examples/s]Map:   2%|▏         | 73402/4287154 [00:06<05:23, 13045.39 examples/s]Map:   2%|▏         | 74794/4287154 [00:06<05:16, 13289.27 examples/s]Map:   2%|▏         | 76848/4287154 [00:06<05:13, 13436.21 examples/s]Map:   2%|▏         | 78918/4287154 [00:06<05:10, 13558.95 examples/s]Map:   2%|▏         | 80961/4287154 [00:07<05:09, 13573.52 examples/s]Map:   2%|▏         | 83000/4287154 [00:07<05:12, 13436.93 examples/s]Map:   2%|▏         | 85000/4287154 [00:07<08:10, 8574.76 examples/s] Map:   2%|▏         | 86403/4287154 [00:07<07:24, 9447.19 examples/s]Map:   2%|▏         | 87801/4287154 [00:07<06:48, 10289.70 examples/s]Map:   2%|▏         | 89139/4287154 [00:07<06:23, 10936.93 examples/s]Map:   2%|▏         | 90569/4287154 [00:08<05:58, 11711.92 examples/s]Map:   2%|▏         | 91990/4287154 [00:08<05:40, 12327.64 examples/s]Map:   2%|▏         | 94001/4287154 [00:08<05:30, 12690.78 examples/s]Map:   2%|▏         | 95405/4287154 [00:08<05:21, 13022.97 examples/s]Map:   2%|▏         | 96821/4287154 [00:08<05:14, 13317.29 examples/s]Map:   2%|▏         | 98876/4287154 [00:08<05:11, 13449.25 examples/s]Map:   2%|▏         | 100944/4287154 [00:08<05:08, 13560.95 examples/s]Map:   2%|▏         | 102993/4287154 [00:08<05:07, 13592.14 examples/s]Map:   2%|▏         | 105000/4287154 [00:09<05:12, 13394.07 examples/s]Map:   2%|▏         | 107000/4287154 [00:09<08:06, 8600.12 examples/s] Map:   3%|▎         | 108391/4287154 [00:09<07:22, 9446.32 examples/s]Map:   3%|▎         | 109811/4287154 [00:09<06:44, 10328.14 examples/s]Map:   3%|▎         | 111115/4287154 [00:09<06:23, 10894.84 examples/s]Map:   3%|▎         | 112525/4287154 [00:09<05:58, 11631.40 examples/s]Map:   3%|▎         | 113957/4287154 [00:10<05:39, 12294.74 examples/s]Map:   3%|▎         | 116000/4287154 [00:10<05:29, 12649.15 examples/s]Map:   3%|▎         | 117401/4287154 [00:10<05:21, 12980.59 examples/s]Map:   3%|▎         | 118811/4287154 [00:10<05:14, 13269.80 examples/s]Map:   3%|▎         | 120886/4287154 [00:10<05:09, 13469.46 examples/s]Map:   3%|▎         | 122927/4287154 [00:10<05:08, 13512.29 examples/s]Map:   3%|▎         | 124992/4287154 [00:10<05:06, 13590.36 examples/s]Map:   3%|▎         | 127000/4287154 [00:11<05:09, 13423.83 examples/s]Map:   3%|▎         | 129000/4287154 [00:11<07:35, 9126.59 examples/s] Map:   3%|▎         | 130413/4287154 [00:11<06:57, 9964.70 examples/s]Map:   3%|▎         | 131818/4287154 [00:11<06:26, 10751.80 examples/s]Map:   3%|▎         | 133127/4287154 [00:11<06:09, 11255.84 examples/s]Map:   3%|▎         | 134465/4287154 [00:11<05:53, 11754.65 examples/s]Map:   3%|▎         | 135883/4287154 [00:11<05:35, 12364.82 examples/s]Map:   3%|▎         | 137961/4287154 [00:12<05:22, 12885.35 examples/s]Map:   3%|▎         | 140000/4287154 [00:12<05:19, 12989.70 examples/s]Map:   3%|▎         | 141392/4287154 [00:12<05:13, 13211.92 examples/s]Map:   3%|▎         | 142775/4287154 [00:12<05:10, 13367.07 examples/s]Map:   3%|▎         | 144833/4287154 [00:12<05:07, 13488.04 examples/s]Map:   3%|▎         | 146895/4287154 [00:12<05:05, 13571.46 examples/s]Map:   3%|▎         | 148911/4287154 [00:12<05:05, 13525.02 examples/s]Map:   4%|▎         | 150998/4287154 [00:13<08:05, 8511.92 examples/s] Map:   4%|▎         | 152285/4287154 [00:13<07:29, 9199.93 examples/s]Map:   4%|▎         | 153745/4287154 [00:13<06:49, 10104.39 examples/s]Map:   4%|▎         | 155011/4287154 [00:13<06:28, 10631.47 examples/s]Map:   4%|▎         | 156401/4287154 [00:13<06:03, 11375.28 examples/s]Map:   4%|▎         | 157756/4287154 [00:13<05:46, 11908.57 examples/s]Map:   4%|▎         | 159760/4287154 [00:13<05:32, 12406.11 examples/s]Map:   4%|▍         | 161774/4287154 [00:14<05:23, 12739.62 examples/s]Map:   4%|▍         | 163789/4287154 [00:14<05:18, 12961.18 examples/s]Map:   4%|▍         | 165848/4287154 [00:14<05:12, 13198.67 examples/s]Map:   4%|▍         | 167890/4287154 [00:14<05:09, 13322.92 examples/s]Map:   4%|▍         | 169953/4287154 [00:14<05:06, 13452.66 examples/s]Map:   4%|▍         | 171974/4287154 [00:14<05:05, 13456.01 examples/s]Map:   4%|▍         | 173743/4287154 [00:15<08:04, 8495.48 examples/s] Map:   4%|▍         | 175000/4287154 [00:15<07:30, 9135.70 examples/s]Map:   4%|▍         | 176384/4287154 [00:15<06:50, 10005.42 examples/s]Map:   4%|▍         | 177777/4287154 [00:15<06:19, 10825.42 examples/s]Map:   4%|▍         | 179802/4287154 [00:15<05:52, 11650.91 examples/s]Map:   4%|▍         | 181834/4287154 [00:15<05:35, 12230.49 examples/s]Map:   4%|▍         | 183854/4287154 [00:16<05:25, 12604.15 examples/s]Map:   4%|▍         | 185891/4287154 [00:16<05:17, 12898.47 examples/s]Map:   4%|▍         | 187924/4287154 [00:16<05:13, 13094.40 examples/s]Map:   4%|▍         | 189965/4287154 [00:16<05:09, 13247.14 examples/s]Map:   4%|▍         | 192000/4287154 [00:16<05:11, 13161.90 examples/s]Map:   5%|▍         | 193403/4287154 [00:16<05:06, 13351.71 examples/s]Map:   5%|▍         | 195000/4287154 [00:17<07:52, 8656.96 examples/s] Map:   5%|▍         | 196347/4287154 [00:17<07:10, 9497.45 examples/s]Map:   5%|▍         | 197759/4287154 [00:17<06:32, 10412.41 examples/s]Map:   5%|▍         | 199052/4287154 [00:17<06:12, 10969.43 examples/s]Map:   5%|▍         | 200481/4287154 [00:17<05:47, 11767.22 examples/s]Map:   5%|▍         | 201927/4287154 [00:17<05:28, 12453.93 examples/s]Map:   5%|▍         | 203983/4287154 [00:17<05:16, 12894.36 examples/s]Map:   5%|▍         | 206000/4287154 [00:17<05:14, 12971.59 examples/s]Map:   5%|▍         | 207415/4287154 [00:17<05:07, 13251.71 examples/s]Map:   5%|▍         | 208836/4287154 [00:18<05:02, 13496.02 examples/s]Map:   5%|▍         | 210927/4287154 [00:18<04:58, 13650.11 examples/s]Map:   5%|▍         | 212981/4287154 [00:18<04:58, 13662.21 examples/s]Map:   5%|▌         | 215000/4287154 [00:18<05:00, 13531.21 examples/s]Map:   5%|▌         | 216998/4287154 [00:18<07:50, 8645.80 examples/s] Map:   5%|▌         | 218324/4287154 [00:19<07:13, 9390.88 examples/s]Map:   5%|▌         | 219767/4287154 [00:19<06:34, 10315.05 examples/s]Map:   5%|▌         | 221084/4287154 [00:19<06:12, 10915.27 examples/s]Map:   5%|▌         | 222535/4287154 [00:19<05:46, 11745.38 examples/s]Map:   5%|▌         | 223980/4287154 [00:19<05:27, 12415.70 examples/s]Map:   5%|▌         | 226016/4287154 [00:19<05:16, 12816.02 examples/s]Map:   5%|▌         | 227468/4287154 [00:19<05:06, 13237.92 examples/s]Map:   5%|▌         | 228890/4287154 [00:19<05:00, 13490.99 examples/s]Map:   5%|▌         | 230888/4287154 [00:19<05:02, 13424.94 examples/s]Map:   5%|▌         | 232933/4287154 [00:20<05:00, 13493.90 examples/s]Map:   5%|▌         | 234987/4287154 [00:20<04:58, 13555.26 examples/s]Map:   6%|▌         | 237000/4287154 [00:20<05:02, 13377.86 examples/s]Map:   6%|▌         | 239000/4287154 [00:20<07:51, 8588.68 examples/s] Map:   6%|▌         | 240412/4287154 [00:20<07:07, 9470.69 examples/s]Map:   6%|▌         | 241810/4287154 [00:21<06:32, 10306.39 examples/s]Map:   6%|▌         | 243109/4287154 [00:21<06:12, 10867.63 examples/s]Map:   6%|▌         | 244544/4287154 [00:21<05:46, 11667.00 examples/s]Map:   6%|▌         | 245948/4287154 [00:21<05:29, 12252.30 examples/s]Map:   6%|▌         | 248000/4287154 [00:21<05:20, 12599.88 examples/s]Map:   6%|▌         | 249435/4287154 [00:21<05:09, 13028.96 examples/s]Map:   6%|▌         | 250865/4287154 [00:21<05:02, 13356.30 examples/s]Map:   6%|▌         | 252950/4287154 [00:21<04:57, 13547.62 examples/s]Map:   6%|▌         | 255000/4287154 [00:21<05:00, 13395.88 examples/s]Map:   6%|▌         | 256407/4287154 [00:22<04:57, 13555.97 examples/s]Map:   6%|▌         | 257829/4287154 [00:22<04:53, 13723.32 examples/s]Map:   6%|▌         | 259896/4287154 [00:22<04:53, 13739.90 examples/s]Map:   6%|▌         | 261762/4287154 [00:22<07:34, 8859.80 examples/s] Map:   6%|▌         | 263090/4287154 [00:22<06:57, 9634.33 examples/s]Map:   6%|▌         | 264490/4287154 [00:22<06:22, 10509.39 examples/s]Map:   6%|▌         | 265904/4287154 [00:23<05:55, 11316.68 examples/s]Map:   6%|▋         | 267965/4287154 [00:23<05:32, 12098.65 examples/s]Map:   6%|▋         | 270000/4287154 [00:23<05:22, 12450.17 examples/s]Map:   6%|▋         | 271417/4287154 [00:23<05:12, 12842.94 examples/s]Map:   6%|▋         | 272834/4287154 [00:23<05:04, 13167.68 examples/s]Map:   6%|▋         | 274912/4287154 [00:23<04:59, 13401.69 examples/s]Map:   6%|▋         | 276976/4287154 [00:23<04:56, 13516.81 examples/s]Map:   7%|▋         | 279000/4287154 [00:23<05:00, 13333.49 examples/s]Map:   7%|▋         | 280385/4287154 [00:24<04:57, 13450.45 examples/s]Map:   7%|▋         | 281820/4287154 [00:24<04:52, 13671.53 examples/s]Map:   7%|▋         | 283757/4287154 [00:24<07:35, 8792.04 examples/s] Map:   7%|▋         | 285085/4287154 [00:24<06:57, 9591.15 examples/s]Map:   7%|▋         | 286475/4287154 [00:24<06:22, 10463.94 examples/s]Map:   7%|▋         | 287881/4287154 [00:24<05:54, 11270.33 examples/s]Map:   7%|▋         | 289176/4287154 [00:24<05:42, 11677.70 examples/s]Map:   7%|▋         | 290584/4287154 [00:25<05:25, 12294.81 examples/s]Map:   7%|▋         | 291999/4287154 [00:25<05:12, 12793.50 examples/s]Map:   7%|▋         | 294000/4287154 [00:25<05:08, 12962.70 examples/s]Map:   7%|▋         | 295409/4287154 [00:25<05:01, 13250.73 examples/s]Map:   7%|▋         | 296837/4287154 [00:25<04:55, 13526.33 examples/s]Map:   7%|▋         | 298922/4287154 [00:25<04:51, 13658.66 examples/s]Map:   7%|▋         | 300852/4287154 [00:25<04:57, 13382.52 examples/s]Map:   7%|▋         | 302910/4287154 [00:25<04:55, 13491.45 examples/s]Map:   7%|▋         | 305000/4287154 [00:26<07:41, 8632.76 examples/s] Map:   7%|▋         | 306437/4287154 [00:26<06:56, 9559.36 examples/s]Map:   7%|▋         | 307847/4287154 [00:26<06:22, 10409.54 examples/s]Map:   7%|▋         | 309147/4287154 [00:26<06:03, 10955.01 examples/s]Map:   7%|▋         | 310557/4287154 [00:26<05:40, 11680.54 examples/s]Map:   7%|▋         | 311973/4287154 [00:26<05:23, 12295.27 examples/s]Map:   7%|▋         | 314000/4287154 [00:27<05:16, 12572.81 examples/s]Map:   7%|▋         | 315428/4287154 [00:27<05:05, 12991.02 examples/s]Map:   7%|▋         | 316864/4287154 [00:27<04:57, 13346.86 examples/s]Map:   7%|▋         | 318960/4287154 [00:27<04:52, 13568.09 examples/s]Map:   7%|▋         | 321000/4287154 [00:27<04:54, 13453.73 examples/s]Map:   8%|▊         | 322405/4287154 [00:27<04:51, 13595.46 examples/s]Map:   8%|▊         | 323829/4287154 [00:27<04:48, 13759.47 examples/s]Map:   8%|▊         | 325916/4287154 [00:27<04:46, 13809.57 examples/s]
+Creating json from Arrow format:   0%|          | 0/4288 [00:00<?, ?ba/s]Creating json from Arrow format:   1%|          | 29/4288 [00:00<00:14, 285.74ba/s]Creating json from Arrow format:   1%|▏         | 60/4288 [00:00<00:14, 294.91ba/s]Creating json from Arrow format:   2%|▏         | 93/4288 [00:00<00:13, 309.53ba/s]Creating json from Arrow format:   3%|▎         | 127/4288 [00:00<00:13, 319.66ba/s]Creating json from Arrow format:   4%|▍         | 161/4288 [00:00<00:12, 322.20ba/s]Creating json from Arrow format:   5%|▍         | 194/4288 [00:00<00:12, 321.88ba/s]Creating json from Arrow format:   5%|▌         | 227/4288 [00:00<00:20, 194.89ba/s]Creating json from Arrow format:   6%|▌         | 260/4288 [00:01<00:18, 222.82ba/s]Creating json from Arrow format:   7%|▋         | 294/4288 [00:01<00:16, 249.08ba/s]Creating json from Arrow format:   8%|▊         | 328/4288 [00:01<00:14, 270.16ba/s]Creating json from Arrow format:   8%|▊         | 360/4288 [00:01<00:13, 282.50ba/s]Creating json from Arrow format:   9%|▉         | 393/4288 [00:01<00:13, 294.21ba/s]Creating json from Arrow format:  10%|▉         | 426/4288 [00:01<00:12, 302.72ba/s]Creating json from Arrow format:  11%|█         | 458/4288 [00:01<00:12, 306.15ba/s]Creating json from Arrow format:  11%|█▏        | 491/4288 [00:01<00:12, 310.95ba/s]Creating json from Arrow format:  12%|█▏        | 523/4288 [00:01<00:12, 310.40ba/s]Creating json from Arrow format:  13%|█▎        | 555/4288 [00:01<00:11, 312.12ba/s]Creating json from Arrow format:  14%|█▎        | 589/4288 [00:02<00:11, 320.20ba/s]Creating json from Arrow format:  15%|█▍        | 622/4288 [00:02<00:11, 319.03ba/s]Creating json from Arrow format:  15%|█▌        | 655/4288 [00:02<00:11, 312.47ba/s]Creating json from Arrow format:  16%|█▌        | 688/4288 [00:02<00:11, 316.07ba/s]Creating json from Arrow format:  17%|█▋        | 720/4288 [00:02<00:11, 316.02ba/s]Creating json from Arrow format:  18%|█▊        | 752/4288 [00:02<00:11, 316.84ba/s]Creating json from Arrow format:  18%|█▊        | 784/4288 [00:02<00:11, 316.64ba/s]Creating json from Arrow format:  19%|█▉        | 816/4288 [00:02<00:11, 313.57ba/s]Creating json from Arrow format:  20%|█▉        | 848/4288 [00:02<00:10, 314.09ba/s]Creating json from Arrow format:  21%|██        | 880/4288 [00:02<00:10, 315.18ba/s]Creating json from Arrow format:  21%|██▏       | 912/4288 [00:03<00:10, 313.35ba/s]Creating json from Arrow format:  22%|██▏       | 944/4288 [00:03<00:10, 311.63ba/s]Creating json from Arrow format:  23%|██▎       | 978/4288 [00:03<00:10, 317.46ba/s]Creating json from Arrow format:  24%|██▎       | 1011/4288 [00:03<00:10, 319.43ba/s]Creating json from Arrow format:  24%|██▍       | 1043/4288 [00:03<00:10, 316.90ba/s]Creating json from Arrow format:  25%|██▌       | 1077/4288 [00:03<00:09, 322.81ba/s]Creating json from Arrow format:  26%|██▌       | 1110/4288 [00:03<00:09, 321.73ba/s]Creating json from Arrow format:  27%|██▋       | 1143/4288 [00:03<00:09, 317.34ba/s]Creating json from Arrow format:  27%|██▋       | 1175/4288 [00:03<00:09, 316.56ba/s]Creating json from Arrow format:  28%|██▊       | 1209/4288 [00:03<00:09, 321.56ba/s]Creating json from Arrow format:  29%|██▉       | 1242/4288 [00:04<00:09, 323.41ba/s]Creating json from Arrow format:  30%|██▉       | 1275/4288 [00:04<00:09, 315.41ba/s]Creating json from Arrow format:  31%|███       | 1308/4288 [00:04<00:09, 317.75ba/s]Creating json from Arrow format:  31%|███▏      | 1341/4288 [00:04<00:09, 320.05ba/s]Creating json from Arrow format:  32%|███▏      | 1374/4288 [00:04<00:09, 314.34ba/s]Creating json from Arrow format:  33%|███▎      | 1408/4288 [00:04<00:09, 316.98ba/s]Creating json from Arrow format:  34%|███▎      | 1440/4288 [00:04<00:09, 316.28ba/s]Creating json from Arrow format:  34%|███▍      | 1472/4288 [00:04<00:08, 316.77ba/s]Creating json from Arrow format:  35%|███▌      | 1506/4288 [00:04<00:08, 321.18ba/s]Creating json from Arrow format:  36%|███▌      | 1539/4288 [00:05<00:08, 320.70ba/s]Creating json from Arrow format:  37%|███▋      | 1573/4288 [00:05<00:08, 325.80ba/s]Creating json from Arrow format:  37%|███▋      | 1606/4288 [00:05<00:08, 325.71ba/s]Creating json from Arrow format:  38%|███▊      | 1639/4288 [00:05<00:08, 324.22ba/s]Creating json from Arrow format:  39%|███▉      | 1672/4288 [00:05<00:08, 321.26ba/s]Creating json from Arrow format:  40%|███▉      | 1705/4288 [00:05<00:08, 312.81ba/s]Creating json from Arrow format:  41%|████      | 1737/4288 [00:05<00:08, 313.49ba/s]Creating json from Arrow format:  41%|████▏     | 1769/4288 [00:05<00:08, 313.08ba/s]Creating json from Arrow format:  42%|████▏     | 1802/4288 [00:05<00:07, 315.55ba/s]Creating json from Arrow format:  43%|████▎     | 1835/4288 [00:05<00:07, 317.81ba/s]Creating json from Arrow format:  44%|████▎     | 1869/4288 [00:06<00:07, 323.18ba/s]Creating json from Arrow format:  44%|████▍     | 1902/4288 [00:06<00:07, 319.66ba/s]Creating json from Arrow format:  45%|████▌     | 1934/4288 [00:06<00:07, 318.16ba/s]Creating json from Arrow format:  46%|████▌     | 1966/4288 [00:06<00:07, 316.69ba/s]Creating json from Arrow format:  47%|████▋     | 1998/4288 [00:06<00:07, 316.19ba/s]Creating json from Arrow format:  47%|████▋     | 2030/4288 [00:06<00:07, 314.47ba/s]Creating json from Arrow format:  48%|████▊     | 2062/4288 [00:06<00:07, 314.07ba/s]Creating json from Arrow format:  49%|████▉     | 2095/4288 [00:06<00:06, 314.64ba/s]Creating json from Arrow format:  50%|████▉     | 2127/4288 [00:06<00:06, 313.98ba/s]Creating json from Arrow format:  50%|█████     | 2159/4288 [00:06<00:06, 311.29ba/s]Creating json from Arrow format:  51%|█████     | 2192/4288 [00:07<00:06, 315.50ba/s]Creating json from Arrow format:  52%|█████▏    | 2224/4288 [00:07<00:06, 313.27ba/s]Creating json from Arrow format:  53%|█████▎    | 2256/4288 [00:07<00:06, 311.88ba/s]Creating json from Arrow format:  53%|█████▎    | 2288/4288 [00:07<00:06, 313.88ba/s]Creating json from Arrow format:  54%|█████▍    | 2322/4288 [00:07<00:06, 320.23ba/s]Creating json from Arrow format:  55%|█████▍    | 2355/4288 [00:07<00:06, 316.74ba/s]Creating json from Arrow format:  56%|█████▌    | 2388/4288 [00:07<00:05, 319.55ba/s]Creating json from Arrow format:  56%|█████▋    | 2422/4288 [00:07<00:05, 323.75ba/s]Creating json from Arrow format:  57%|█████▋    | 2456/4288 [00:07<00:05, 328.36ba/s]Creating json from Arrow format:  58%|█████▊    | 2489/4288 [00:08<00:05, 324.70ba/s]Creating json from Arrow format:  59%|█████▉    | 2522/4288 [00:08<00:05, 323.30ba/s]Creating json from Arrow format:  60%|█████▉    | 2555/4288 [00:08<00:05, 319.94ba/s]Creating json from Arrow format:  60%|██████    | 2590/4288 [00:08<00:05, 326.14ba/s]Creating json from Arrow format:  61%|██████    | 2624/4288 [00:08<00:05, 327.89ba/s]Creating json from Arrow format:  62%|██████▏   | 2657/4288 [00:08<00:04, 328.28ba/s]Creating json from Arrow format:  63%|██████▎   | 2692/4288 [00:08<00:04, 332.97ba/s]Creating json from Arrow format:  64%|██████▎   | 2727/4288 [00:08<00:04, 335.48ba/s]Creating json from Arrow format:  64%|██████▍   | 2761/4288 [00:08<00:04, 322.47ba/s]Creating json from Arrow format:  65%|██████▌   | 2794/4288 [00:08<00:04, 318.99ba/s]Creating json from Arrow format:  66%|██████▌   | 2827/4288 [00:09<00:04, 321.38ba/s]Creating json from Arrow format:  67%|██████▋   | 2860/4288 [00:09<00:04, 322.23ba/s]Creating json from Arrow format:  67%|██████▋   | 2893/4288 [00:09<00:04, 321.36ba/s]Creating json from Arrow format:  68%|██████▊   | 2927/4288 [00:09<00:04, 326.29ba/s]Creating json from Arrow format:  69%|██████▉   | 2960/4288 [00:09<00:04, 327.12ba/s]Creating json from Arrow format:  70%|██████▉   | 2994/4288 [00:09<00:03, 330.13ba/s]Creating json from Arrow format:  71%|███████   | 3028/4288 [00:09<00:03, 330.32ba/s]Creating json from Arrow format:  71%|███████▏  | 3062/4288 [00:09<00:03, 331.89ba/s]Creating json from Arrow format:  72%|███████▏  | 3096/4288 [00:09<00:03, 328.41ba/s]Creating json from Arrow format:  73%|███████▎  | 3129/4288 [00:09<00:03, 316.24ba/s]Creating json from Arrow format:  74%|███████▎  | 3161/4288 [00:10<00:03, 315.61ba/s]Creating json from Arrow format:  74%|███████▍  | 3193/4288 [00:10<00:03, 313.59ba/s]Creating json from Arrow format:  75%|███████▌  | 3225/4288 [00:10<00:03, 315.19ba/s]Creating json from Arrow format:  76%|███████▌  | 3257/4288 [00:10<00:03, 315.38ba/s]Creating json from Arrow format:  77%|███████▋  | 3292/4288 [00:10<00:03, 324.11ba/s]Creating json from Arrow format:  78%|███████▊  | 3326/4288 [00:10<00:02, 326.51ba/s]Creating json from Arrow format:  78%|███████▊  | 3359/4288 [00:10<00:02, 320.49ba/s]Creating json from Arrow format:  79%|███████▉  | 3392/4288 [00:10<00:02, 319.72ba/s]Creating json from Arrow format:  80%|███████▉  | 3424/4288 [00:10<00:02, 319.33ba/s]Creating json from Arrow format:  81%|████████  | 3457/4288 [00:11<00:02, 321.97ba/s]Creating json from Arrow format:  81%|████████▏ | 3490/4288 [00:11<00:02, 320.95ba/s]Creating json from Arrow format:  82%|████████▏ | 3523/4288 [00:11<00:02, 316.92ba/s]Creating json from Arrow format:  83%|████████▎ | 3556/4288 [00:11<00:02, 319.18ba/s]Creating json from Arrow format:  84%|████████▎ | 3589/4288 [00:11<00:02, 321.17ba/s]Creating json from Arrow format:  84%|████████▍ | 3622/4288 [00:11<00:02, 319.87ba/s]Creating json from Arrow format:  85%|████████▌ | 3657/4288 [00:11<00:01, 326.62ba/s]Creating json from Arrow format:  86%|████████▌ | 3690/4288 [00:11<00:01, 323.88ba/s]Creating json from Arrow format:  87%|████████▋ | 3724/4288 [00:11<00:01, 325.95ba/s]Creating json from Arrow format:  88%|████████▊ | 3757/4288 [00:11<00:01, 322.28ba/s]Creating json from Arrow format:  88%|████████▊ | 3790/4288 [00:12<00:01, 322.42ba/s]Creating json from Arrow format:  89%|████████▉ | 3823/4288 [00:12<00:01, 321.57ba/s]Creating json from Arrow format:  90%|████████▉ | 3856/4288 [00:12<00:01, 323.46ba/s]Creating json from Arrow format:  91%|█████████ | 3889/4288 [00:12<00:01, 322.15ba/s]Creating json from Arrow format:  91%|█████████▏| 3922/4288 [00:12<00:01, 319.87ba/s]Creating json from Arrow format:  92%|█████████▏| 3956/4288 [00:12<00:01, 324.26ba/s]Creating json from Arrow format:  93%|█████████▎| 3990/4288 [00:12<00:00, 326.69ba/s]Creating json from Arrow format:  94%|█████████▍| 4023/4288 [00:12<00:00, 320.39ba/s]Creating json from Arrow format:  95%|█████████▍| 4056/4288 [00:12<00:00, 321.67ba/s]Creating json from Arrow format:  95%|█████████▌| 4089/4288 [00:12<00:00, 323.30ba/s]Creating json from Arrow format:  96%|█████████▌| 4122/4288 [00:13<00:00, 319.89ba/s]Creating json from Arrow format:  97%|█████████▋| 4155/4288 [00:13<00:00, 314.34ba/s]Creating json from Arrow format:  98%|█████████▊| 4188/4288 [00:13<00:00, 318.75ba/s]Creating json from Arrow format:  98%|█████████▊| 4220/4288 [00:13<00:00, 315.46ba/s]Creating json from Arrow format:  99%|█████████▉| 4253/4288 [00:13<00:00, 318.84ba/s]Creating json from Arrow format: 100%|█████████▉| 4285/4288 [00:13<00:00, 310.04ba/s]Creating json from Arrow format: 100%|██████████| 4288/4288 [00:13<00:00, 315.03ba/s]
+Preprocessed dataset saved as dimple_train.json
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator tokenize
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator pos
+[main] INFO edu.stanford.nlp.tagger.maxent.MaxentTagger - Loading POS tagger from edu/stanford/nlp/models/pos-tagger/english-left3words-distsim.tagger ... done [0.5 sec].
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator lemma
+[main] INFO edu.stanford.nlp.pipeline.StanfordCoreNLP - Adding annotator parse
+[main] INFO edu.stanford.nlp.parser.common.ParserGrammar - Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [0.5 sec].
+Processed 10000 pairs...
+Running Average TED-3: 5.9005995, TED-F: 33.288822
+Error processing Record ID: 8712513844233396
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 20000 pairs...
+Running Average TED-3: 5.899195, TED-F: 33.299118
+Processed 30000 pairs...
+Running Average TED-3: 5.9029913, TED-F: 33.335743
+Error processing Record ID: 8009379485656209
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Error processing Record ID: 3063473014545797
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 40000 pairs...
+Running Average TED-3: 5.9108305, TED-F: 33.272877
+Error processing Record ID: 7999701640504399
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Error processing Record ID: 3803917164737392
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 50000 pairs...
+Running Average TED-3: 5.9081206, TED-F: 33.27701
+Processed 60000 pairs...
+Running Average TED-3: 5.908466, TED-F: 33.39694
+Error processing Record ID: 6894284769333598
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 70000 pairs...
+Running Average TED-3: 5.913617, TED-F: 33.42278
+Processed 80000 pairs...
+Running Average TED-3: 5.918034, TED-F: 33.4369
+Error processing Record ID: 7045292908081050
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 90000 pairs...
+Running Average TED-3: 5.9085455, TED-F: 33.411976
+Error processing Record ID: 7556749115469913
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 100000 pairs...
+Running Average TED-3: 5.910968, TED-F: 33.404152
+Processed 110000 pairs...
+Running Average TED-3: 5.9139223, TED-F: 33.39587
+Error processing Record ID: 8841338746200782
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Error processing Record ID: 3128061028298496
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 120000 pairs...
+Running Average TED-3: 5.920936, TED-F: 33.398968
+Error processing Record ID: 3426302472930198
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Error processing Record ID: 8252687996869400
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Error processing Record ID: 9284864141679877
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 130000 pairs...
+Running Average TED-3: 5.917872, TED-F: 33.383377
+Processed 140000 pairs...
+Running Average TED-3: 5.9173284, TED-F: 33.387783
+Error processing Record ID: 1420854765332553
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 150000 pairs...
+Running Average TED-3: 5.91768, TED-F: 33.38964
+Error processing Record ID: 6535765901063185
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Error processing Record ID: 2761879436666672
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 160000 pairs...
+Running Average TED-3: 5.918339, TED-F: 33.394432
+Error processing Record ID: 8451544365117157
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 170000 pairs...
+Running Average TED-3: 5.9172845, TED-F: 33.3867
+Error processing Record ID: 3886980207289134
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 180000 pairs...
+Running Average TED-3: 5.918772, TED-F: 33.377148
+Processed 190000 pairs...
+Running Average TED-3: 5.920657, TED-F: 33.386776
+Error processing Record ID: 5940038163970729
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 200000 pairs...
+Running Average TED-3: 5.922992, TED-F: 33.393707
+Error processing Record ID: 7556749115469913
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 210000 pairs...
+Running Average TED-3: 5.923891, TED-F: 33.397766
+Error processing Record ID: 3423363912127922
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 220000 pairs...
+Running Average TED-3: 5.9251456, TED-F: 33.39558
+Processed 230000 pairs...
+Running Average TED-3: 5.922807, TED-F: 33.3971
+Error processing Record ID: 1739892083460629
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Error processing Record ID: 4739234136768243
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 240000 pairs...
+Running Average TED-3: 5.9257545, TED-F: 33.391388
+Error processing Record ID: 2672673666938754
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+Processed 250000 pairs...
+Running Average TED-3: 5.9238844, TED-F: 33.386044
+Error processing Record ID: 7879636528174171
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:53)
+Processed 260000 pairs...
+Running Average TED-3: 5.9226713, TED-F: 33.379906
+Error processing Record ID: 3446860935997138
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.parse(TED_with_CoreNLPParser.java:35)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLPParser.fromString(TED_with_CoreNLPParser.java:40)
+	at at.unisalzburg.dbresearch.apted.custom.TED_with_CoreNLP_Dataset.main(TED_with_CoreNLP_Dataset.java:52)
+slurmstepd: error: *** JOB 17433063 ON gl1526 CANCELLED AT 2024-11-22T08:16:08 DUE TO TIME LIMIT ***
