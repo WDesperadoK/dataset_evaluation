@@ -10,7 +10,7 @@ Evaluate DIMPLE on semantic similarity and Tree Edit Distance
 
 Evaluation self-generated dataset on the same benchmarks
 
-# Run the following code in your terminal
+# For semantic similarity and syntatic diversity run the following code in your terminal
 
 ```bash/home/shihuis/dataset_evaluation/apted/src/main/java/node
 bash setup.sh
