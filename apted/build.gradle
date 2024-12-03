@@ -1,0 +1,41 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+// Dependency repository.
+repositories {
+    mavenCentral()
+}
+
+// Project dependencies. Updated to use testImplementation.
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'com.google.code.gson:gson:2.8.2'
+}
+
+// Specify main class for the JAR file.
+jar {
+    manifest {
+        attributes 'Main-Class': 'at.unisalzburg.dbresearch.apted.util.CommandLine'
+    }
+    // Exclude the old API from the JAR.
+    exclude (
+        'costmodel',
+        'distance',
+        'node',
+        'parser'
+    )
+}
+
+// Include test classes and private members into Javadoc.
+javadoc {
+    classpath += sourceSets.test.compileClasspath
+    source += sourceSets.test.allJava
+    options.memberLevel = JavadocMemberLevel.PRIVATE
+}
+
+// Enable printing to standard output while testing.
+test {
+    testLogging.showStandardStreams = true
+}

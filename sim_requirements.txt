@@ -1,9 +1,8 @@
+tqdm
 scikit-learn
-textstat
-spacy
-datasets
+scipy
 transformers
 torch
-nltk
 numpy
-zss
+datasets
+nltk
